@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bg">#CAFFFC</color>
+    <color name="bgTask">#A7F2EE</color>
+    <color name="bgIcon">#8FF0EB</color>
+    <color name="bgTaskH">#EDAFAF</color>
+
+</resources>

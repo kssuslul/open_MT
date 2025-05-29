@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_rounded"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        style="@android:style/Widget.DeviceDefault.DatePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_rounded"
+        android:calendarTextColor="@color/black"
+        android:calendarViewShown="true"
+        android:dayOfWeekBackground="#000000"
+        android:headerBackground="@drawable/bg_task_rounded"
+        android:spinnersShown="true"
+        android:yearListSelectorColor="@color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TimePicker
+                android:id="@+id/timePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:backgroundTint="@color/black"
+                android:headerBackground="@drawable/cursor"
+                android:inputType="none"
+                android:timePickerMode="spinner" />
+
+        </FrameLayout>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/cancel_BTN"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@android:color/transparent"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            android:layout_gravity="center_vertical"
+            app:srcCompat="@drawable/stop" />
+
+        <ImageButton
+            android:id="@+id/apply_BTN"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@android:color/transparent"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            android:layout_gravity="center_vertical"
+            app:srcCompat="@drawable/apply" />
+
+    </LinearLayout>
+
+</LinearLayout>

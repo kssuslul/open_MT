@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/bg_rounded">
+
+    <EditText
+        android:id="@+id/editTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_task_rounded"
+        android:hint="Введите задачу"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/bg"
+        android:textColorLink="#000000"
+        android:textCursorDrawable="@drawable/cursor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <CheckBox
+            android:id="@+id/nfCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:buttonTint="@color/black"
+            android:text="Напомнить" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dateTimeContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:layout_marginTop="8dp">
+
+        <EditText
+            android:id="@+id/date_time_Txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="дата / время"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textColorLink="@color/black"
+            android:backgroundTint="@color/black"
+            android:focusable="false"
+            android:inputType="none" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/cancel_BTN"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@android:color/transparent"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/stop" />
+
+        <ImageButton
+            android:id="@+id/apply_BTN"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@android:color/transparent"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/apply" />
+    </LinearLayout>
+
+</LinearLayout>
